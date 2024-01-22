@@ -6,7 +6,7 @@ export default function Articles(){
         <div id="side-menu">
            <Link to={`/add-article`}> <div id="side-menu-item"><RiArticleLine/>New Article</div></Link>
         </div>
-        <div class="bg-box">
+        <div className="bg-box">
         Articles
         </div>
         

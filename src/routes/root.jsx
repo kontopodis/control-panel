@@ -1,8 +1,10 @@
 import Login from "./login";
 import { Link,Outlet } from "react-router-dom";
+import { contextService } from "../lib/context";
+import { useState } from "react";
 export default function Root() {
-  let token = true
-    if(token){
+  const [token,setToken] = useState(contextService)
+      if(token){
       return(
         <>
         <nav>

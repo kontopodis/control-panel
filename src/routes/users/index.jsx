@@ -3,7 +3,7 @@ export default function Users() {
   return (
     <>
     <div id="users">
-      <div class="bg-box">
+      <div className="bg-box">
         That's my content
         <br/>
         That's my content

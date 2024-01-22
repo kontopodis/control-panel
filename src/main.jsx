@@ -9,6 +9,7 @@ import Root from "./routes/root";
 import ErrorPage from "./routes/error-page";
 import Users from "./routes/users";
 import Articles from "./routes/Articles"
+import { contextService } from "./lib/context";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -31,8 +32,17 @@ const router = createBrowserRouter([
   },
 ]);
 
+const App = () =>{
+  const [token,setToken]= React.useState("")
+  return (
+    <contextService.Provider value={{token,setToken}}>
+<RouterProvider router={router} />
+    </contextService.Provider>
+    
+  )
+}
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+ <App/>
   </React.StrictMode>
 );
