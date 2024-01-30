@@ -1,0 +1,49 @@
+.userCard{
+    display: grid;
+    grid-template-columns: 30% auto;
+    box-shadow: 3px 1px 1px $primary_color;
+    margin: 15px;
+    align-items: center;
+    padding: 15px;
+    border-radius: 25px;
+    .userImg{
+        width:150px;
+        height: 150px;
+        background-color: $secondary_color;
+        border-radius: 50%;
+
+    }
+    .details{
+        padding: 5px;
+        display: block;
+        width: 100%;
+        align-content: center;
+    
+
+        .userButtons{
+            display: flex;
+            margin:5px;
+            justify-content: end;
+        }  
+        .userName{
+            text-align: center;
+            padding: 15px;
+            font-size: $font-size-xl;
+            border-bottom: dashed 1px $primary_color;
+        }
+
+        .userEmail{
+            text-align: center;
+            padding: 5px;
+        }
+
+        .userRole{
+            padding: 5px;
+            text-align: center;
+        }
+        
+    
+  
+    }
+
+}

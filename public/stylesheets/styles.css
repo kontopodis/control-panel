@@ -1,0 +1,73 @@
+body {
+  background-color: #080710;
+  font: Helvetica, sans-serif;
+  color: white;
+}
+
+a {
+  color: #098eb4;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+nav {
+  background-color: #036b81;
+}
+nav .menu {
+  display: flex;
+  background-color: #036b81;
+  padding: 5px;
+}
+nav .menu .menu-item {
+  display: block;
+  padding: 5px;
+}
+nav .menu .menu-item a {
+  color: white;
+}
+nav .menu .menu-item a:hover {
+  color: #098eb4;
+}
+
+.userCard {
+  display: grid;
+  grid-template-columns: 30% auto;
+  box-shadow: 3px 1px 1px #036b81;
+  margin: 15px;
+  align-items: center;
+  padding: 15px;
+  border-radius: 25px;
+}
+.userCard .userImg {
+  width: 150px;
+  height: 150px;
+  background-color: #098eb4;
+  border-radius: 50%;
+}
+.userCard .details {
+  padding: 5px;
+  display: block;
+  width: 100%;
+  align-content: center;
+}
+.userCard .details .userButtons {
+  display: flex;
+  margin: 5px;
+  justify-content: end;
+}
+.userCard .details .userName {
+  text-align: center;
+  padding: 15px;
+  font-size: 2rem;
+  border-bottom: dashed 1px #036b81;
+}
+.userCard .details .userEmail {
+  text-align: center;
+  padding: 5px;
+}
+.userCard .details .userRole {
+  padding: 5px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=styles.css.map */

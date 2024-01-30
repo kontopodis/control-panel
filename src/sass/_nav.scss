@@ -1,0 +1,20 @@
+nav{
+    background-color: $primary_color;
+
+    .menu{
+        display: flex;
+        background-color: $primary_color;
+        padding:5px;
+        .menu-item{
+            display: block;
+            padding: 5px;;
+            a{
+                color:$text_color;
+            }
+
+            a:hover{
+                color:$secondary_color;
+            }
+        }
+    }
+}

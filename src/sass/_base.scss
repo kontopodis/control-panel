@@ -1,0 +1,12 @@
+body{
+    background-color: $background_color;
+    font: $font;
+    color:$text_color;
+}
+
+a {
+    color:$secondary_color;
+    text-decoration: none;
+    cursor: pointer;
+}
+
